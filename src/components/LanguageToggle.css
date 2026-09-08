@@ -1,0 +1,26 @@
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 30px;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  transition:
+    background-color 0.45s var(--ease),
+    border-color 0.45s var(--ease),
+    color 0.2s ease;
+}
+
+.lang-toggle span.is-active {
+  color: var(--accent);
+}
+
+.lang-toggle__sep {
+  opacity: 0.45;
+}

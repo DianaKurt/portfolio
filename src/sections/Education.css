@@ -1,0 +1,35 @@
+.education__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.education__card {
+  padding: 1.35rem 1.4rem;
+  display: grid;
+  gap: 0.55rem;
+  min-height: 100%;
+}
+
+.education__status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.education__card h3 {
+  font-size: 1.2rem;
+}
+
+.education__card p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+@media (max-width: 860px) {
+  .education__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,40 @@
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.skills__group {
+  padding: 1.3rem 1.35rem;
+}
+
+.skills__group h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.9rem;
+  color: var(--accent);
+}
+
+.skills__group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.skills__group li {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+}
+
+@media (max-width: 980px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}

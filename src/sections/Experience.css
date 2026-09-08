@@ -1,0 +1,43 @@
+.experience__card {
+  padding: clamp(1.4rem, 3vw, 2rem);
+}
+
+.experience__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.experience__head h3 {
+  font-size: 1.45rem;
+  margin-bottom: 0.25rem;
+}
+
+.experience__company {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.experience__period {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.experience__project {
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.experience__list {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: grid;
+  gap: 0.7rem;
+  color: var(--text-muted);
+}
+
+.experience__list li::marker {
+  color: var(--accent-bright);
+}

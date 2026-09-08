@@ -1,0 +1,61 @@
+.about__layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: clamp(1.5rem, 4vw, 3.25rem);
+  align-items: start;
+}
+
+.about__photo {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  aspect-ratio: 3 / 4;
+}
+
+.about__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  filter: brightness(0.78) contrast(1.04);
+}
+
+.about__photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 25, 23, 0.12) 0%,
+    rgba(28, 25, 23, 0.28) 100%
+  );
+  pointer-events: none;
+}
+
+.about__copy .section-title {
+  margin-bottom: 1.25rem;
+}
+
+.about__grid {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 70ch;
+}
+
+.about__text {
+  color: var(--text-muted);
+  font-size: 1.08rem;
+}
+
+@media (max-width: 768px) {
+  .about__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about__photo {
+    max-width: 280px;
+  }
+}
