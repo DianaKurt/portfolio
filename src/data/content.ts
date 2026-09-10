@@ -32,6 +32,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 'teamboard',
+    title: 'TeamBoard',
+    image: '/projects/teamboard.png',
+    tags: ['Next.js', 'SaaS', 'Stripe'],
+    links: [
+      { kind: 'github', url: 'https://github.com/DianaKurt/TeamBoard' },
+      { kind: 'live', url: 'https://teamboard-saas-eight.vercel.app/' },
+    ],
+  },
+  {
     id: 'inventory',
     title: 'Inventory Management Application',
     image: '/projects/inventory.jpg',

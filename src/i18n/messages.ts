@@ -129,6 +129,8 @@ export const messages: Record<Locale, Messages> = {
       },
     },
     projectDescriptions: {
+      teamboard:
+        'Multi-tenant SaaS: workspaces, Kanban-задачи, роли и Free/Pro billing (Stripe + demo).',
       inventory:
         'Fullstack-приложение для создания и управления кастомными инвентарями и товарами.',
       music:
@@ -269,6 +271,8 @@ export const messages: Record<Locale, Messages> = {
       },
     },
     projectDescriptions: {
+      teamboard:
+        'Multi-tenant SaaS: workspaces, Kanban tasks, roles, and Free/Pro billing with Stripe.',
       inventory:
         'Full-stack app for creating and managing customizable inventories and items.',
       music:
